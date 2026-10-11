@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MANNAT GAME</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 25px 15px;
+      background: linear-gradient(
+        135deg,
+        #071a2f,
+        #123c63,
+        #176b87,
+        #0d243b
+      );
+      color: white;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 430px;
+      text-align: center;
+    }
+
+    .card {
+      width: 100%;
+      padding: 32px 22px 25px;
+      border-radius: 28px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.35),
+        inset 0 1px 1px rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+    }
+
+    .app-logo {
+      width: 105px;
+      height: 105px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 20px;
+      border: 4px solid rgba(255, 255, 255, 0.9);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+    }
+
+    h1 {
+      font-size: 30px;
+      line-height: 1.2;
+      margin-bottom: 10px;
+      font-weight: 800;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.82);
+      margin-bottom: 24px;
+    }
+
+    .download-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      min-height: 58px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #00e676, #00b85a);
+      color: white;
+      text-decoration: none;
+      font-size: 19px;
+      font-weight: 800;
+      box-shadow: 0 10px 25px rgba(0, 230, 118, 0.28);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      margin-bottom: 22px;
+    }
+
+    .download-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 30px rgba(0, 230, 118, 0.38);
+    }
+
+    .download-btn:active {
+      transform: scale(0.97);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+
+    .feature-box {
+      padding: 17px 10px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.10);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .feature-icon {
+      font-size: 25px;
+      margin-bottom: 8px;
+    }
+
+    .feature-title {
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .feature-text {
+      margin-top: 5px;
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.68);
+    }
+
+    .bottom-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 4px 0 20px;
+    }
+
+    .small-note {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.65);
+      margin-top: 3px;
+    }
+
+    .managed {
+      margin-top: 17px;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.65);
+    }
+
+    .managed a {
+      color: #ffffff;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .managed a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 380px) {
+      .card {
+        padding: 27px 17px 22px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      .app-logo {
+        width: 92px;
+        height: 92px;
+      }
+
+      .download-btn {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+
+    <div class="card">
+
+      <!-- अपनी फोटो का नाम यहाँ डालें -->
+      <img
+        src="p.jpg"
+        alt="App Logo"
+        class="app-logo"
+      >
+
+        <h1>MANNAT GAME</h1>
+
+      <p class="subtitle">
+        Download now and enjoy a smooth, fast and reliable experience.
+      </p>
+      <!-- पहला DOWNLOAD BUTTON -->
+      <a
+        href="https://mannatgame.co.in/mannatgame-v2.apk"
+        class="download-btn"
+      >
+        <span>⬇️</span>
+        <span>Download Now</span>
+        <span>⬇️</span>
+      </a>
+
+      <!-- FEATURE BOXES -->
+      <div class="features">
+
+        <div class="feature-box">
+          <div class="feature-icon">⚡</div>
+          <div class="feature-title">Super Fast Service</div>
+          <div class="feature-text">Fast & smooth experience</div>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon">🎮</div>
+          <div class="feature-title">Smooth Play App</div>
+          <div class="feature-text">Easy & enjoyable</div>
+        </div>
+
+      </div>
+
+      <!-- दूसरा DOWNLOAD BUTTON -->
+      <a
+        href="https://mannatgame.co.in/mannatgame-v2.apk"
+        class="download-btn"
+      >
+        <span>⬇️</span>
+        <span>Download Now</span>
+        <span>⬇️</span>
+      </a>
+
+      <div class="bottom-title">
+        Fast • Secure • Easy to Use
+      </div>
+
+      <div class="small-note">
+        Download and get started in just a few seconds.
+      </div>
+
+    </div>
+
+    <!-- SHIVAM LINK -->
+    <div class="managed">
+      Ads Managed by
+      <a
+        href="https://telegram.me/+LiETHEERYtgzNjU1"
+        target="_blank"
+      >
+        APEagency
+      </a>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1759470158666379');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1759470158666379&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
